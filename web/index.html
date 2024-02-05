@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravidade</title>
+
+  <!-- Load plotly.js into the DOM -->
+  <script src='https://cdn.plot.ly/plotly-2.27.0.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <main>
+    <div class="controles">
+      <div>
+        <div>Fator V:</div>
+        <input type="range" id="fator_V" min="0.1" max="15" step="0.01" value="1">
+        <div id="valor_fator_V">1</div>
+      </div>
+      <div>
+        <div>Fator T:</div>
+        <input type="range" id="fator_T" min="0.01" max="3" step="0.01" value="1">
+        <div id="valor_fator_T">1</div>
+      </div>
+      <div>
+        <div>Zoom:</div>
+        <input type="range" id="zoom" min="0.01" max="2" step="0.01" value="1">
+        <div id="valor_zoom">1</div>
+      </div>
+    </div>
+    <div id="plot">
+  
+    </div>
+  </main>
+
+  <script type="text/javascript" src="/eel.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
