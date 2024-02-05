@@ -1,0 +1,2 @@
+# condicoes-iniciais
+Condições iniciais
